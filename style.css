@@ -38,6 +38,10 @@ html::-webkit-scrollbar-thumb {
   background: var(--black);
 }
 
+section {
+  padding: 5rem 9%;
+}
+
 .btn {
   margin-top: 1rem;
   display: inline-block;
@@ -183,7 +187,7 @@ body {
   width: 100%;
 }
 
-.login-form-container .active {
+.login-form-container.active {
   right: 0;
 }
 
@@ -260,12 +264,64 @@ body {
   cursor: pointer;
 }
 
+.home {
+  background: url(../image/banner-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.home .row .content {
+  flex: 1 1 42rem;
+}
+
+.home .row .books-slider {
+  flex: 1 1 42rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.home .row .books-slider a img {
+  height: 25rem;
+  width: 20rem;
+}
+
+.home .row .books-slider a:hover img {
+  transform: scale(0.9);
+}
+
+.home .row .books-slider .stand {
+  width: 100%;
+  margin-top: -12rem;
+}
+
+.home .row .content h3 {
+  color: var(--black);
+  font-size: 4.5rem;
+}
+
+.home .row .content p {
+  color: var(--light-color);
+  font-size: 1.5rem;
+  line-height: 2;
+  padding: 1rem 0;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
   }
   .header .header-1 {
     padding: 2rem;
+  }
+  section {
+    padding: 3rem 2rem;
   }
 }
 @media (max-width: 768px) {
@@ -297,6 +353,13 @@ body {
   }
   .header .header-1 .search-form.active {
     top: 115%;
+  }
+  .home .row .content {
+    text-align: center;
+  }
+
+  .home .row .content {
+    font-size: 3.5rem;
   }
 }
 
