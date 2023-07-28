@@ -170,10 +170,6 @@ section {
   background: var(--dark-color);
 }
 
-body {
-  height: 300rem;
-}
-
 .login-form-container {
   display: flex;
   align-items: center;
@@ -265,7 +261,7 @@ body {
 }
 
 .home {
-  background: url(../image/banner-bg.jpg) no-repeat;
+  background: url(images/banner.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -288,8 +284,8 @@ body {
 }
 
 .home .row .books-slider a img {
-  height: 25rem;
-  width: 20rem;
+  height: 22rem;
+  width: 18rem;
 }
 
 .home .row .books-slider a:hover img {
@@ -361,6 +357,10 @@ body {
   .home .row .content {
     font-size: 3.5rem;
   }
+  .home .row .books-slider .stand {
+    width: 100%;
+    margin-top: -9rem;
+  }
 }
 
 @media (max-width: 450px) {
@@ -369,5 +369,9 @@ body {
   }
   .header .header-1 {
     padding: 2rem;
+  }
+  .home .row .books-slider .stand {
+    width: 100%;
+    margin-top: -6rem;
   }
 }
