@@ -27,7 +27,21 @@ window.onload = () => {
   } else {
     document.querySelector(".header .header-2").classList.remove("active");
   }
+  fadeOut();
 };
+
+function loader() {
+  document.querySelector(".loader-container").classList.add("active");
+}
+
+function fadeOut() {
+  setTimeout(loader, 4000);
+  setTimeout(scrollOn, 4000);
+}
+
+function scrollOn() {
+  document.querySelector("html").style.overflowY = "scroll";
+}
 
 var swiper = new Swiper(".books-slider", {
   loop: true,
@@ -95,6 +109,28 @@ var swiper = new Swiper(".arrivals-slider", {
 });
 
 var swiper = new Swiper(".reviews-slider", {
+  spaceBetween: 10,
+  grabCursor: true,
+  centeredSlide: true,
+  loop: true,
+  autoplay: {
+    delay: 8000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+var swiper = new Swiper(".blogs-slider", {
   spaceBetween: 10,
   grabCursor: true,
   centeredSlide: true,
