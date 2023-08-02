@@ -20,5 +20,5 @@ tornando-se uma referência no mercado de livros online.
  + Imagens foram retiradas da internet (Google)
 
 <h2> :computer: ACESSO </h2> 
-Para acessar, basta clickar: <a href="https://abdonbookstore.netlify.app/" target="_blank">AQUI!</a>
+Para acessar, basta clickar: <a href="https://jujubookstore.netlify.app/" target="_blank">AQUI!</a>
 <h2></h2>
